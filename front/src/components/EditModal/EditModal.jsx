@@ -63,6 +63,14 @@ const EditModal = ({ editedData, isEditModalOpen, onClose }) => {
               onChange={handleInputChange}
             ></textarea>
           </label>
+          <label> 
+            Superpowers: 
+            <textarea 
+              name="superpowers" 
+              value={formData.superpowers} 
+              onChange={handleInputChange} 
+            ></textarea> 
+          </label>
           <div className={css.buttonContainer}>
             <button onClick={handleSave}>Save</button>
             <button onClick={onClose}>Cancel</button>
